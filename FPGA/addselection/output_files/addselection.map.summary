@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Feb 23 14:55:36 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : addselection
+Top-level Entity Name : addselection
+Family : Cyclone III
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 31
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
