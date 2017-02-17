@@ -1,0 +1,6 @@
+|nand2sim
+X <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+A => inst.IN1
+
+

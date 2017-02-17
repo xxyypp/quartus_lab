@@ -1,0 +1,37 @@
+# do nand2sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:12:41 on Nov 13,2015
+# vlog -work work nand2sim.vo 
+# -- Compiling module nand2sim
+# 
+# Top level modules:
+# 	nand2sim
+# End time: 15:12:41 on Nov 13,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:12:41 on Nov 13,2015
+# vlog -work work nand2sim.vwf.vt 
+# -- Compiling module nand2sim_vlg_sample_tst
+# -- Compiling module nand2sim_vlg_check_tst
+# -- Compiling module nand2sim_vlg_vec_tst
+# 
+# Top level modules:
+# 	nand2sim_vlg_vec_tst
+# End time: 15:12:42 on Nov 13,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c -do "nand2sim.do" 
+# Start time: 15:12:42 on Nov 13,2015
+# Loading work.nand2sim_vlg_vec_tst
+# Loading work.nand2sim
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.nand2sim_vlg_sample_tst
+# Loading work.nand2sim_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : nand2sim.vwf.vt(151)
+#    Time: 1 us  Iteration: 0  Instance: /nand2sim_vlg_vec_tst/tb_out
+# End time: 15:12:43 on Nov 13,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

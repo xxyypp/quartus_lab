@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/quartus2lab/flipflop/simulation/qsim
+vflip
+Z1 !s110 1448378670
+!i10b 1
+!s100 E:ZJF?EMS^4N;5iQldoEj3
+IB]=?g]^iS^i30Mf<@Vb>V0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1448378668
+8flip.vo
+Fflip.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1448378670.271000
+!s107 flip.vo|
+!s90 -work|work|flip.vo|
+!i113 1
+Z4 o-work work
+vflip_vlg_check_tst
+Z5 !s110 1448378671
+!i10b 1
+!s100 G2NgggaDkfY0g<daRg4441
+IZQn=bQnng=aH83=O]H0o?1
+R2
+R0
+Z6 w1448378665
+Z7 8Waveform1.vwf.vt
+Z8 FWaveform1.vwf.vt
+L0 58
+R3
+r1
+!s85 0
+31
+Z9 !s108 1448378670.766000
+Z10 !s107 Waveform1.vwf.vt|
+Z11 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R4
+vflip_vlg_sample_tst
+R1
+!i10b 1
+!s100 zb>EcmI]zoB9OGf>G@faD2
+IQC`o4MeYmJNe75:B[NDO_0
+R2
+R0
+R6
+R7
+R8
+L0 30
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R4
+vflip_vlg_vec_tst
+R5
+!i10b 1
+!s100 3F=8@jLX4Hc164b^d9SEP2
+IU3:;e`2i0_UJRRDSA9l7Q2
+R2
+R0
+R6
+R7
+R8
+L0 206
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R4

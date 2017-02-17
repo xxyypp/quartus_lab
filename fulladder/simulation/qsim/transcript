@@ -1,0 +1,34 @@
+# do fulladder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:27:41 on Nov 17,2015
+# vlog -work work fulladder.vo 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 14:27:41 on Nov 17,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:27:41 on Nov 17,2015
+# vlog -work work fulladder.vwf.vt 
+# -- Compiling module fulladder_vlg_sample_tst
+# -- Compiling module fulladder_vlg_check_tst
+# -- Compiling module fulladder_vlg_vec_tst
+# 
+# Top level modules:
+# 	fulladder_vlg_vec_tst
+# End time: 14:27:42 on Nov 17,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c -do "fulladder.do" 
+# Start time: 14:27:42 on Nov 17,2015
+# Loading work.fulladder_vlg_vec_tst
+# Loading work.fulladder
+# Loading work.fulladder_vlg_sample_tst
+# Loading work.fulladder_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : fulladder.vwf.vt(180)
+#    Time: 1 us  Iteration: 0  Instance: /fulladder_vlg_vec_tst/tb_out
+# End time: 14:27:42 on Nov 17,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

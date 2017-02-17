@@ -1,0 +1,1038 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.1 Build 150 06/03/2015 SJ Full Version"
+
+// DATE "11/24/2015 14:28:57"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module alu2 (
+	C_OUT,
+	I1,
+	SHIFT,
+	XX,
+	CLK,
+	YY,
+	I0,
+	S);
+output 	C_OUT;
+input 	I1;
+input 	SHIFT;
+output 	[3:0] XX;
+input 	CLK;
+output 	[3:0] YY;
+input 	I0;
+output 	[3:0] S;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \C_OUT~output_o ;
+wire \XX[3]~output_o ;
+wire \XX[2]~output_o ;
+wire \XX[1]~output_o ;
+wire \XX[0]~output_o ;
+wire \YY[3]~output_o ;
+wire \YY[2]~output_o ;
+wire \YY[1]~output_o ;
+wire \YY[0]~output_o ;
+wire \S[3]~output_o ;
+wire \S[2]~output_o ;
+wire \S[1]~output_o ;
+wire \S[0]~output_o ;
+wire \CLK~input_o ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~sumout ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT ;
+wire \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7~sumout ;
+wire \I1~input_o ;
+wire \SHIFT~input_o ;
+wire \I0~input_o ;
+wire \inst|inst4~combout ;
+wire \inst|inst3~combout ;
+wire \inst6~combout ;
+wire \inst3|25~0_combout ;
+wire \inst|inst|inst3|inst~combout ;
+wire \inst|inst|inst|inst~combout ;
+wire \inst|inst2~combout ;
+wire \inst|inst|inst4|inst~combout ;
+wire \inst|inst|inst|HAs~0_combout ;
+wire \inst|inst|inst|inst12~0_combout ;
+wire \inst|inst|inst2|inst12~0_combout ;
+wire \inst|inst|inst3|inst12~0_combout ;
+wire \inst|inst|inst4|inst12~0_combout ;
+wire [7:0] \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit ;
+
+
+cyclonev_io_obuf \C_OUT~output (
+	.i(\inst|inst|inst|inst~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\C_OUT~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \C_OUT~output .bus_hold = "false";
+defparam \C_OUT~output .open_drain_output = "false";
+defparam \C_OUT~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \XX[3]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\XX[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \XX[3]~output .bus_hold = "false";
+defparam \XX[3]~output .open_drain_output = "false";
+defparam \XX[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \XX[2]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\XX[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \XX[2]~output .bus_hold = "false";
+defparam \XX[2]~output .open_drain_output = "false";
+defparam \XX[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \XX[1]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\XX[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \XX[1]~output .bus_hold = "false";
+defparam \XX[1]~output .open_drain_output = "false";
+defparam \XX[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \XX[0]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\XX[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \XX[0]~output .bus_hold = "false";
+defparam \XX[0]~output .open_drain_output = "false";
+defparam \XX[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \YY[3]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\YY[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \YY[3]~output .bus_hold = "false";
+defparam \YY[3]~output .open_drain_output = "false";
+defparam \YY[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \YY[2]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\YY[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \YY[2]~output .bus_hold = "false";
+defparam \YY[2]~output .open_drain_output = "false";
+defparam \YY[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \YY[1]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\YY[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \YY[1]~output .bus_hold = "false";
+defparam \YY[1]~output .open_drain_output = "false";
+defparam \YY[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \YY[0]~output (
+	.i(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\YY[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \YY[0]~output .bus_hold = "false";
+defparam \YY[0]~output .open_drain_output = "false";
+defparam \YY[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \S[3]~output (
+	.i(\inst|inst|inst|inst12~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S[3]~output .bus_hold = "false";
+defparam \S[3]~output .open_drain_output = "false";
+defparam \S[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \S[2]~output (
+	.i(\inst|inst|inst2|inst12~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S[2]~output .bus_hold = "false";
+defparam \S[2]~output .open_drain_output = "false";
+defparam \S[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \S[1]~output (
+	.i(\inst|inst|inst3|inst12~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S[1]~output .bus_hold = "false";
+defparam \S[1]~output .open_drain_output = "false";
+defparam \S[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \S[0]~output (
+	.i(\inst|inst|inst4|inst12~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\S[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \S[0]~output .bus_hold = "false";
+defparam \S[0]~output .open_drain_output = "false";
+defparam \S[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \CLK~input (
+	.i(CLK),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\CLK~input_o ));
+// synopsys translate_off
+defparam \CLK~input .bus_hold = "false";
+defparam \CLK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] ) + ( VCC ) + ( !VCC ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] ) + ( VCC ) + ( !VCC ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0 .lut_mask = 64'h00000000000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[0] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[0] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[0] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT  ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[1] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[1] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[1] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT  ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[2] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[2] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[2] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT  ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[3] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[3] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[3] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT  ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita3~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[4] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[4] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[4] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT  ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita4~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[5] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[5] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[5] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT  ))
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT  = CARRY(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita5~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~sumout ),
+	.cout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT ),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[6] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[6] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[6] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7 (
+// Equation(s):
+// \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7~sumout  = SUM(( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7] ) + ( GND ) + ( \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita6~COUT ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7~sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7 .extended_lut = "off";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[7] (
+	.clk(\CLK~input_o ),
+	.d(\inst4|LPM_COUNTER_component|auto_generated|counter_comb_bita7~sumout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[7] .is_wysiwyg = "true";
+defparam \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit[7] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_io_ibuf \I1~input (
+	.i(I1),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\I1~input_o ));
+// synopsys translate_off
+defparam \I1~input .bus_hold = "false";
+defparam \I1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \SHIFT~input (
+	.i(SHIFT),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SHIFT~input_o ));
+// synopsys translate_off
+defparam \SHIFT~input .bus_hold = "false";
+defparam \SHIFT~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \I0~input (
+	.i(I0),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\I0~input_o ));
+// synopsys translate_off
+defparam \I0~input .bus_hold = "false";
+defparam \I0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst4 (
+// Equation(s):
+// \inst|inst4~combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7] & !\I0~input_o ))))) # (\SHIFT~input_o  & 
+// (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7])))) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]) # 
+// (\I0~input_o ))))) # (\SHIFT~input_o  & (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7])))) ) )
+
+	.dataa(!\I1~input_o ),
+	.datab(!\SHIFT~input_o ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]),
+	.datad(!\I0~input_o ),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst4~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst4 .extended_lut = "off";
+defparam \inst|inst4 .lut_mask = 64'h4B474B8B4B474B8B;
+defparam \inst|inst4 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst3 (
+// Equation(s):
+// \inst|inst3~combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\I0~input_o  & !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]))))) # (\SHIFT~input_o  & 
+// (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6])))) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]) # 
+// (\I0~input_o ))))) # (\SHIFT~input_o  & (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6])))) ) )
+
+	.dataa(!\I1~input_o ),
+	.datab(!\SHIFT~input_o ),
+	.datac(!\I0~input_o ),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [2]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst3~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst3 .extended_lut = "off";
+defparam \inst|inst3 .lut_mask = 64'h44B748BB44B748BB;
+defparam \inst|inst3 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb inst6(
+// Equation(s):
+// \inst6~combout  = (\I1~input_o  & !\SHIFT~input_o )
+
+	.dataa(!\I1~input_o ),
+	.datab(!\SHIFT~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst6~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam inst6.extended_lut = "off";
+defparam inst6.lut_mask = 64'h4444444444444444;
+defparam inst6.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst3|25~0 (
+// Equation(s):
+// \inst3|25~0_combout  = (!\SHIFT~input_o  & \I0~input_o )
+
+	.dataa(!\SHIFT~input_o ),
+	.datab(!\I0~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst3|25~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst3|25~0 .extended_lut = "off";
+defparam \inst3|25~0 .lut_mask = 64'h2222222222222222;
+defparam \inst3|25~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst3|inst (
+// Equation(s):
+// \inst|inst|inst3|inst~combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] & (!\inst6~combout 
+//  $ (((\inst3|25~0_combout  & \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]))))) ) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( 
+// (!\inst3|25~0_combout  & (!\inst6~combout  & (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]))) # (\inst3|25~0_combout  & ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]) # (!\inst6~combout  $ 
+// (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1])))) ) ) ) # ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\inst3|25~0_combout  & 
+// (!\inst6~combout  & (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]))) # (\inst3|25~0_combout  & ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] & (!\inst6~combout )) # 
+// (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] & ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]))))) ) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( 
+// !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\inst3|25~0_combout  & (!\inst6~combout  & (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]))) # (\inst3|25~0_combout  & 
+// ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] & (!\inst6~combout )) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] & ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]))))) ) ) )
+
+	.dataa(!\inst6~combout ),
+	.datab(!\inst3|25~0_combout ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.dataf(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst3|inst~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst3|inst .extended_lut = "off";
+defparam \inst|inst|inst3|inst .lut_mask = 64'hA2B0A2B0B2B1A090;
+defparam \inst|inst|inst3|inst .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst|inst (
+// Equation(s):
+// \inst|inst|inst|inst~combout  = ( \inst|inst|inst3|inst~combout  & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7] & (\inst|inst4~combout  & (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & \inst|inst3~combout ))) # 
+// (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7] & (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & \inst|inst3~combout )) # (\inst|inst4~combout ))) ) ) # ( !\inst|inst|inst3|inst~combout  & ( 
+// (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7] & (\inst|inst4~combout  & ((\inst|inst3~combout ) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6])))) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7] & 
+// (((\inst|inst3~combout ) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6])) # (\inst|inst4~combout ))) ) )
+
+	.dataa(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]),
+	.datab(!\inst|inst4~combout ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.datad(!\inst|inst3~combout ),
+	.datae(!\inst|inst|inst3|inst~combout ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst|inst~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst|inst .extended_lut = "off";
+defparam \inst|inst|inst|inst .lut_mask = 64'h1777111717771117;
+defparam \inst|inst|inst|inst .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst2 (
+// Equation(s):
+// \inst|inst2~combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\I0~input_o  & !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]))))) # (\SHIFT~input_o  & 
+// (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5])))) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]) # 
+// (\I0~input_o ))))) # (\SHIFT~input_o  & (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5])))) ) )
+
+	.dataa(!\I1~input_o ),
+	.datab(!\SHIFT~input_o ),
+	.datac(!\I0~input_o ),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst2~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst2 .extended_lut = "off";
+defparam \inst|inst2 .lut_mask = 64'h44B748BB44B748BB;
+defparam \inst|inst2 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst4|inst (
+// Equation(s):
+// \inst|inst|inst4|inst~combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ((!\I1~input_o ) # ((\I0~input_o ) # (\SHIFT~input_o )))) ) ) # ( 
+// !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\SHIFT~input_o  & (!\I1~input_o  & ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]) # (\I0~input_o )))) # (\SHIFT~input_o  & 
+// (((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4])))) ) )
+
+	.dataa(!\I1~input_o ),
+	.datab(!\SHIFT~input_o ),
+	.datac(!\I0~input_o ),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst4|inst~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst4|inst .extended_lut = "off";
+defparam \inst|inst|inst4|inst .lut_mask = 64'hBB08BF00BB08BF00;
+defparam \inst|inst|inst4|inst .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst|HAs~0 (
+// Equation(s):
+// \inst|inst|inst|HAs~0_combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\I0~input_o ) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]))))) ) ) # ( 
+// !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3] & ( (!\SHIFT~input_o  & (!\I1~input_o  $ (((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]) # (!\I0~input_o ))))) ) )
+
+	.dataa(!\I1~input_o ),
+	.datab(!\SHIFT~input_o ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [7]),
+	.datad(!\I0~input_o ),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [3]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst|HAs~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst|HAs~0 .extended_lut = "off";
+defparam \inst|inst|inst|HAs~0 .lut_mask = 64'h4448448444484484;
+defparam \inst|inst|inst|HAs~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst|inst12~0 (
+// Equation(s):
+// \inst|inst|inst|inst12~0_combout  = ( \inst|inst|inst4|inst~combout  & ( \inst|inst|inst|HAs~0_combout  & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & ((!\inst|inst3~combout ) # 
+// ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]) # (!\inst|inst2~combout )))) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & (!\inst|inst3~combout  & ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit 
+// [5]) # (!\inst|inst2~combout )))) ) ) ) # ( !\inst|inst|inst4|inst~combout  & ( \inst|inst|inst|HAs~0_combout  & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & ((!\inst|inst3~combout ) # 
+// ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] & !\inst|inst2~combout )))) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & (!\inst|inst3~combout  & (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] 
+// & !\inst|inst2~combout ))) ) ) ) # ( \inst|inst|inst4|inst~combout  & ( !\inst|inst|inst|HAs~0_combout  & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & (\inst|inst3~combout  & 
+// (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] & \inst|inst2~combout ))) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] & \inst|inst2~combout )) # 
+// (\inst|inst3~combout ))) ) ) ) # ( !\inst|inst|inst4|inst~combout  & ( !\inst|inst|inst|HAs~0_combout  & ( (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & (\inst|inst3~combout  & ((\inst|inst2~combout ) # 
+// (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5])))) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] & (((\inst|inst2~combout ) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5])) # (\inst|inst3~combout 
+// ))) ) ) )
+
+	.dataa(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.datab(!\inst|inst3~combout ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.datad(!\inst|inst2~combout ),
+	.datae(!\inst|inst|inst4|inst~combout ),
+	.dataf(!\inst|inst|inst|HAs~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst|inst12~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst|inst12~0 .extended_lut = "off";
+defparam \inst|inst|inst|inst12~0 .lut_mask = 64'h17771117E888EEE8;
+defparam \inst|inst|inst|inst12~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst2|inst12~0 (
+// Equation(s):
+// \inst|inst|inst2|inst12~0_combout  = ( \inst|inst|inst4|inst~combout  & ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] $ (!\inst|inst3~combout  $ (((\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] & \inst|inst2~combout 
+// )))) ) ) # ( !\inst|inst|inst4|inst~combout  & ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6] $ (!\inst|inst3~combout  $ (((\inst|inst2~combout ) # (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5])))) ) )
+
+	.dataa(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [6]),
+	.datab(!\inst|inst3~combout ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.datad(!\inst|inst2~combout ),
+	.datae(!\inst|inst|inst4|inst~combout ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst2|inst12~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst2|inst12~0 .extended_lut = "off";
+defparam \inst|inst|inst2|inst12~0 .lut_mask = 64'h6999666969996669;
+defparam \inst|inst|inst2|inst12~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst3|inst12~0 (
+// Equation(s):
+// \inst|inst|inst3|inst12~0_combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( !\inst6~combout  $ (((\inst3|25~0_combout  & 
+// (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] $ (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]))))) ) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( 
+// \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (\inst3|25~0_combout  & (!\inst6~combout  $ (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] $ (\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1])))) ) ) ) 
+// # ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\inst3|25~0_combout  & (!\inst6~combout )) # (\inst3|25~0_combout  & 
+// ((!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] $ (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1])))) ) ) ) # ( !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4] & ( 
+// !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (\inst3|25~0_combout  & (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5] $ (!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]))) ) ) )
+
+	.dataa(!\inst6~combout ),
+	.datab(!\inst3|25~0_combout ),
+	.datac(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [5]),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [1]),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.dataf(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst3|inst12~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst3|inst12~0 .extended_lut = "off";
+defparam \inst|inst|inst3|inst12~0 .lut_mask = 64'h03308BB81221A99A;
+defparam \inst|inst|inst3|inst12~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|inst|inst4|inst12~0 (
+// Equation(s):
+// \inst|inst|inst4|inst12~0_combout  = ( \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\SHIFT~input_o  & (\I0~input_o  & !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4])) ) ) # ( 
+// !\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0] & ( (!\SHIFT~input_o  & (\I0~input_o  & \inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4])) ) )
+
+	.dataa(gnd),
+	.datab(!\SHIFT~input_o ),
+	.datac(!\I0~input_o ),
+	.datad(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [4]),
+	.datae(!\inst4|LPM_COUNTER_component|auto_generated|counter_reg_bit [0]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|inst|inst4|inst12~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|inst|inst4|inst12~0 .extended_lut = "off";
+defparam \inst|inst|inst4|inst12~0 .lut_mask = 64'h000C0C00000C0C00;
+defparam \inst|inst|inst4|inst12~0 .shared_arith = "off";
+// synopsys translate_on
+
+assign C_OUT = \C_OUT~output_o ;
+
+assign XX[3] = \XX[3]~output_o ;
+
+assign XX[2] = \XX[2]~output_o ;
+
+assign XX[1] = \XX[1]~output_o ;
+
+assign XX[0] = \XX[0]~output_o ;
+
+assign YY[3] = \YY[3]~output_o ;
+
+assign YY[2] = \YY[2]~output_o ;
+
+assign YY[1] = \YY[1]~output_o ;
+
+assign YY[0] = \YY[0]~output_o ;
+
+assign S[3] = \S[3]~output_o ;
+
+assign S[2] = \S[2]~output_o ;
+
+assign S[1] = \S[1]~output_o ;
+
+assign S[0] = \S[0]~output_o ;
+
+endmodule

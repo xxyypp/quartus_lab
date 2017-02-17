@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/quartus2lab/nand2sim/simulation/qsim
+vnand2sim
+!s110 1447427561
+!i10b 1
+!s100 3FBiVWXAJ8jF0?T8`8Q5?2
+IIGEi<DK426dILXPcz6PjI1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1447427560
+8nand2sim.vo
+Fnand2sim.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1447427561.385000
+!s107 nand2sim.vo|
+!s90 -work|work|nand2sim.vo|
+!i113 1
+Z3 o-work work
+vnand2sim_vlg_check_tst
+Z4 !s110 1447427562
+!i10b 1
+!s100 F=>7mdfR5okLWaL0EKaO=3
+IDIEzaR?CU9boV4;>OXQLX3
+R1
+R0
+Z5 w1447427557
+Z6 8nand2sim.vwf.vt
+Z7 Fnand2sim.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1447427561.828000
+Z9 !s107 nand2sim.vwf.vt|
+Z10 !s90 -work|work|nand2sim.vwf.vt|
+!i113 1
+R3
+vnand2sim_vlg_sample_tst
+R4
+!i10b 1
+!s100 <LZKP=HPcER3U28<XRA<C0
+IbPU`zGlVWYb8d6@F9ia0=3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vnand2sim_vlg_vec_tst
+R4
+!i10b 1
+!s100 h@>5j]9MFeka8HmbfLGSO0
+I[hDHhb@VQ7PiJz5NXk?iO1
+R1
+R0
+R5
+R6
+R7
+L0 155
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

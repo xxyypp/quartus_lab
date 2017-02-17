@@ -1,0 +1,36 @@
+# do alu2.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:28:59 on Nov 24,2015
+# vlog -work work alu2.vo 
+# -- Compiling module alu2
+# 
+# Top level modules:
+# 	alu2
+# End time: 14:29:00 on Nov 24,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:29:00 on Nov 24,2015
+# vlog -work work Waveform3.vwf.vt 
+# -- Compiling module alu2_vlg_sample_tst
+# -- Compiling module alu2_vlg_check_tst
+# -- Compiling module alu2_vlg_vec_tst
+# 
+# Top level modules:
+# 	alu2_vlg_vec_tst
+# End time: 14:29:01 on Nov 24,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c -do "alu2.do" 
+# Start time: 14:29:01 on Nov 24,2015
+# Loading work.alu2_vlg_vec_tst
+# Loading work.alu2
+# Loading altera_ver.dffeas
+# Loading work.alu2_vlg_sample_tst
+# Loading work.alu2_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform3.vwf.vt(395)
+#    Time: 1 us  Iteration: 0  Instance: /alu2_vlg_vec_tst/tb_out
+# End time: 14:29:02 on Nov 24,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

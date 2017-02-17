@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, H:/quartus2lab/nand2sim/nand2sim.bdf
+source_file = 1, H:/quartus2lab/nand2sim/nand2sim.vwf
+source_file = 1, H:/quartus2lab/nand2sim/db/nand2sim.cbx.xml
+design_name = nand2sim
+instance = comp, \X~output\, X~output, nand2sim, 1
+instance = comp, \B~input\, B~input, nand2sim, 1
+instance = comp, \A~input\, A~input, nand2sim, 1
